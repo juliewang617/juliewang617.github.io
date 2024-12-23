@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/personal-site-2/">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects/bearly-used" element={<BearlyUsedPage />} />
