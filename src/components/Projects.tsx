@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
               "A full-stack platform for students to exchange used goods, reducing waste across campus."
             }
             githubLink={"Link"}
-            viewMoreLink={"/projects/bearly-used"}
+            viewMoreLink={"#/projects/bearly-used"}
           />
           <Project
             title={"Email to Calendar REST API"}
@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
               "A script, served through a REST API, that parses your emails for possible events through an LLM and adds them to your calendar."
             }
             githubLink={"Link"}
-            viewMoreLink={"/projects/email-to-cal"}
+            viewMoreLink={"#/projects/email-to-cal"}
           />
           <Project
             title={"Carpool Organizer"}
@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
               "An application to organize carpools for my local robotics team of over 100 members."
             }
             githubLink={"Link"}
-            viewMoreLink={"/projects/carpool"}
+            viewMoreLink={"#/projects/carpool"}
           />
           <Project
             title={"Machine Learning Eczema Tool"}
@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
               "A web application to combat inequities in eczema treatment, featuring an ML identifier model. Selected as a finalist for Deloitte's Health Equity Challenge."
             }
             githubLink={"Link"}
-            viewMoreLink={"/projects/ez-ed"}
+            viewMoreLink={"#/projects/ez-ed"}
           />
           <Project
             title={"Connect4 AI"}

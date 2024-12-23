@@ -4,11 +4,11 @@ import CarpoolPage from "./components/CarpoolPage.tsx";
 import EmailToCalPage from "./components/EmailToCalPage.tsx";
 import EzEdPage from "./components/EzEdPage.tsx";
 import HomePage from "./components/HomePage.tsx";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename="/personal-site-2/">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects/bearly-used" element={<BearlyUsedPage />} />
