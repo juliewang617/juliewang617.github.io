@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Link as ScrollLink, scroller } from "react-scroll";
 import flower from "../assets/flower.svg";
-import "../styles/Navbar.css";
+import "../styles/Styles.css";
 
 const Navbar: React.FC = () => {
   const navigate = useNavigate();

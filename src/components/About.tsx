@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Styles.css";
-import me from "../assets/me.jpeg";
+import me from "../assets/me.png";
 import emailIcon from "../assets/email.svg";
 import githubIcon from "../assets/github.svg";
 import linkedInIcon from "../assets/linkedin.svg";

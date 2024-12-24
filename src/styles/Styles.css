@@ -1,3 +1,58 @@
+/* Nav bar */
+
+* { 
+    font-family: 'Open Sans', serif;
+}
+
+.navbar {
+    display: flex; 
+    padding: 1rem 2rem;
+    background-color: var(--offwhite);
+    width: 100%;
+    border-bottom: 2px solid var(--blue2); 
+    position: sticky;
+    z-index: 1000;  
+    top: 0; 
+  }
+  
+  .title {
+    color: var(--purple);
+    font-weight: bold;
+    transition: transform 0.2s ease;
+  }
+
+  .title:hover {
+    color: var(--blue3);
+    text-decoration: none;
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+  
+  .nav-links {
+    margin: auto 0; 
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links *{
+    color: var(--purple);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+
+    display: block; 
+  }
+  
+  .nav-links *:hover {
+    color: var(--blue3);
+    text-decoration: none;
+    transform: translateY(-1px);
+    cursor: pointer;
+  }
+  
+
+/* Homepage section */
+
 .section { 
     display: flex;
     flex-direction: column;
@@ -24,6 +79,7 @@
     justify-content: center;
 }
 
+/* About section */
 
 .intro-picture { 
     width: 90%;
@@ -65,6 +121,8 @@
     overflow: hidden;
     box-shadow: 0 2px 10px rgb(221, 216, 216); 
 }
+
+/* Carousel */
 
 .carousel-inner {
     height: 100%; 
@@ -110,6 +168,7 @@ h4 {
     text-align: left; 
 }
 
+/* Tags */
 
 .tags-container { 
     display: flex; 
@@ -129,6 +188,8 @@ h4 {
 .tag:hover {
     transform: translateY(-2px);
 }
+
+/* Projects */
 
 .projects-container { 
     width: 90%;
@@ -169,6 +230,7 @@ h4 {
     box-shadow: 0 2px 10px rgb(221, 216, 216);
 }
 
+/* Footer */
 
 .footer { 
     padding: 1em;
@@ -206,6 +268,8 @@ h4 {
     transform: translateY(-2px);
 }
 
+/* Divider */
+
 .divider { 
     display: flex;
     justify-content: center;
@@ -222,7 +286,18 @@ h4 {
     margin: 0 1em;
 }
 
+/* Responsive styling */
 @media (max-width: 768px) {
+
+    .navbar{
+        justify-content: center; 
+        flex-direction: column;
+    }
+
+    .title { 
+        margin-bottom: 1em;
+    }
+
     .section {
         height: auto;
     }
