@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
             date={"Dec 2024"}
             tags={["Python", "Flask"]}
             caption={
-              "A web application to combat inequities in eczema treatment, featuring an ML identifier model. Selected as a finalist for Deloitte's Health Equity Challenge."
+              "A Connect4 web game, with an AI player that uses the minimax algorithm with alpha-beta pruning to calculate moves."
             }
             githubLink={"Link"}
             viewMoreLink={"Link"}
@@ -72,9 +72,7 @@ const Projects: React.FC = () => {
             title={"Social Platform for Cat Owners"}
             date={"Dec 2024"}
             tags={["React Native", "JavaScript", "Firebase"]}
-            caption={
-              "A web application to combat inequities in eczema treatment, featuring an ML identifier model. Selected as a finalist for Deloitte's Health Equity Challenge."
-            }
+            caption={"A mobile forum for cat owners to post about their cats."}
             githubLink={"Link"}
             viewMoreLink={"Link"}
           />

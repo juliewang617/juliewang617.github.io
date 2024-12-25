@@ -29,17 +29,18 @@
   }
   
   .nav-links {
-    margin: auto 0; 
+    margin: auto;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
+    padding: 0;
   }
   
   .nav-links *{
     color: var(--purple);
-    text-decoration: none;
     transition: transform 0.2s ease;
-
     display: block; 
   }
   
@@ -365,4 +366,11 @@ h4 {
     }
 
 
+}
+
+@media (max-width: 365px) {
+    .nav-links { 
+        font-size: 0.8em;
+        gap: 1.2em;
+    }
 }
