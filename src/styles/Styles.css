@@ -29,7 +29,7 @@
   }
   
   .nav-links {
-    margin: auto;
+    margin: auto 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -287,12 +287,79 @@ h4 {
     margin: 0 1em;
 }
 
+/* Individual Project Page */
+
+.project-page{
+    padding: 0 5em;
+    width: 80%; 
+    max-width: 60em;
+    margin: auto;
+}
+
+h5 { 
+    font-size: 1em;
+    text-align: left; 
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.project-header { 
+    margin-top: 3em;
+}
+
+.project-main-image { 
+    background-color: var(--blue1);
+    box-shadow: 0 2px 10px rgb(221, 216, 216);
+    border-radius: 2em;
+    max-height: 30em;
+    object-fit: cover;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+}
+
+
+.project-info { 
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.project-info-row { 
+    gap: 2em;
+    display: flex; 
+}
+
+.project-info-div { 
+    width: 20em;
+}
+
+.project-github-link { 
+    display: flex; 
+    gap: 1em;
+    align-items: center;
+    color: var(--blue3);
+    font-weight: bold;
+}
+
+.project-paragraph{
+    padding: 0.5em 1em;
+}
+
+
+
 /* Responsive styling */
 @media (max-width: 768px) {
 
     .navbar{
         justify-content: center; 
         flex-direction: column;
+    }
+
+    .nav-links { 
+        margin: auto;
     }
 
     .title { 
