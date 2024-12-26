@@ -8,13 +8,17 @@ const Footer: React.FC = () => {
         <li>@2024 Julie Wang. Developed with React and Bootstrap</li>
         <div className="footer-links">
           <li>
-            <a href="#resume">GitHub</a>
+            <a target="_blank" href="https://github.com/juliewang617">
+              GitHub
+            </a>
           </li>
           <li>
-            <a href="#resume">LinkedIn</a>
+            <a target="_blank" href="https://www.linkedin.com/in/juliewang617/">
+              LinkedIn
+            </a>
           </li>
           <li>
-            <a href="#resume">Email</a>
+            <a href="mailto:julie_wang2@brown.edu">Email</a>
           </li>
         </div>
       </ul>

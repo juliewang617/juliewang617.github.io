@@ -337,15 +337,40 @@ h5 {
 }
 
 .project-github-link { 
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 10px rgb(221, 216, 216);
+    padding: 0.5em 1em;
+    border-radius: 1em;
     display: flex; 
     gap: 1em;
     align-items: center;
     color: var(--blue3);
     font-weight: bold;
+    transition: transform 0.2s ease;
 }
+
+.project-github-link:hover { 
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
 
 .project-paragraph{
     padding: 0.5em 1em;
+}
+
+.other-projects-container {
+    display: flex;
+    width: 75%; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: auto;
+    margin-bottom: 5em;
+}
+
+.other-projects-container .project-container {
+    max-width: 50%;
 }
 
 
@@ -430,6 +455,14 @@ h5 {
 
     .footer-links{
         border: none;
+    }
+
+    .other-projects-container {
+        flex-direction: column;
+    }
+    
+    .other-projects-container .project-container {
+        max-width: 100%;
     }
 
 

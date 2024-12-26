@@ -1,12 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
 :root {
-  --offwhite: #fff8ef;
+  --offwhite: #fbf6ef;
   --blue1: #D4E5E9;
   --blue2: #A9CED7;
-  --blue3: #6E8FCC;
+  --blue3: #567dc5;
   --purple: #433C83;
 }
 
