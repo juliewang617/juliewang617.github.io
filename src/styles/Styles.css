@@ -456,6 +456,7 @@ h5 {
     .footer-items {
         flex-direction: column; 
         gap: 0.5rem;
+        padding: 0;
     }
 
     .footer-links{
