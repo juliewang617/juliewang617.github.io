@@ -360,7 +360,6 @@ h5 {
     cursor: pointer;
 }
 
-
 .project-paragraph{
     padding: 0.5em 1em;
 }
@@ -465,6 +464,7 @@ h5 {
 
     .project-page{
         width: 100%;
+        padding: 0 2em;
     }
 
     .other-projects-container {
