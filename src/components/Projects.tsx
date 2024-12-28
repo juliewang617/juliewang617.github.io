@@ -65,7 +65,9 @@ const Projects: React.FC = () => {
               "A Connect4 web game, with an AI player that uses the minimax algorithm with alpha-beta pruning to calculate moves."
             }
             githubLink={"Link"}
-            viewMoreLink={"Link"}
+            viewMoreLink={
+              "https://github.com/juliewang617/Connect4-with-AI-Player"
+            }
           />
           <Project
             image={null}
@@ -74,7 +76,7 @@ const Projects: React.FC = () => {
             tags={["React Native", "JavaScript", "Firebase"]}
             caption={"A mobile forum for cat owners to post about their cats."}
             githubLink={"Link"}
-            viewMoreLink={"Link"}
+            viewMoreLink={"https://github.com/juliewang617/Cattit"}
           />
         </div>
       </div>
