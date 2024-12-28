@@ -151,6 +151,8 @@ const BearlyUsedPage: React.FC = () => {
               parameterized SQL queries. Afterward, I collaborated with my
               teammates to integrate the frontend and backend by utilizing
               TypeScript to call the REST API rather than hard-coded mock data.
+              Then, I worked on end-to-end testing using Playwright and Java
+              unit tests for the backend.
             </p>
           </div>
           <div className="project-paragraph">
