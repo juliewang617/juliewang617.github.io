@@ -58,21 +58,22 @@ const EmailToCalPage: React.FC = () => {
               events, meetings, talks, conferences, and more. Searching through
               emails and adding each event to my calendar I’m interested takes a
               long time — so I thought, what if I could automate this process?
-              The EmailToCalendar Bot just does this: it searches your recent
-              emails for possible events, suggests them to you in the form of
-              JSON objects, then adds them as events to your calendar.
+              The Email to Callendar application does just this: it searches
+              your recent emails for possible events, suggests them to you in
+              the form of JSON objects, then adds them as events to your
+              calendar.
             </p>
           </div>
           <div className="project-paragraph">
             <h5>Development Process</h5>
             <p>
               The application incorporates a JavaScript backend with Node and
-              Express to implement a RESTful API. The scripts to search your
-              inbox and add them to your calender are housed at different
-              endpoints, and activate when navigated to. The program seamlessly
-              configures OAuth 2.0 to authenticate the user, then takes
-              advantage of the Google Gemini LLM to parse emails for events.
-              Caching is also implemented to reduce API calls.
+              Express to implement a RESTful API. The scripts search your inbox
+              and add them to your calender are housed at different endpoints,
+              and activate when navigated to. The program seamlessly configures
+              OAuth 2.0 to authenticate the user, then takes advantage of the
+              Google Gemini LLM to parse emails for events. Caching is also
+              implemented to reduce API calls.
             </p>
           </div>
           <div className="project-paragraph">

@@ -30,7 +30,7 @@ const EzEdPage: React.FC = () => {
       <Navbar />
       <div className="project-page">
         <div className="project-header">
-          <h1>Ez-Ed</h1>
+          <h1>Eczema-Educate</h1>
           <p>
             A web application to combat inequities in eczema treatment,
             featuring an ML identifier model.
@@ -171,9 +171,7 @@ const EzEdPage: React.FC = () => {
               social impact. It strengthened my skills in user-centered design,
               web development, and machine learning integration, while also
               giving me the opportunity to address a real-world issue close to
-              my heart. The experience of presenting my work to industry
-              professionals further solidified my confidence in advocating for
-              meaningful solutions.
+              my heart.
             </p>
           </div>
         </div>

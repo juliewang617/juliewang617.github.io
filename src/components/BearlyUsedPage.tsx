@@ -148,11 +148,10 @@ const BearlyUsedPage: React.FC = () => {
               project structure, I set up the Postgres database and developed
               Java handlers and REST API endpoints to manage user information,
               listing data, and search filtering, which was done through
-              parameterized SQL queries. Afterward, I collaborated with my
-              teammates to integrate the frontend and backend by utilizing
-              TypeScript to call the REST API rather than hard-coded mock data.
-              Then, I worked on end-to-end testing using Playwright and Java
-              unit tests for the backend.
+              parameterized SQL queries. Afterward, I worked on integrating the
+              frontend and backend by utilizing TypeScript to call the REST API
+              rather than hard-coded mock data. Then, I worked on JUnit tests
+              for the backend and end-to-end testing using Playwright.
             </p>
           </div>
           <div className="project-paragraph">

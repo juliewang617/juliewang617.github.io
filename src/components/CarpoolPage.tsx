@@ -124,8 +124,8 @@ const CarpoolPage: React.FC = () => {
             <h5>Development Process</h5>
             <p>
               I started by holding meetings with coaches and students to
-              understand their needs, which I documented as user stories and a
-              requirements document. To ensure the design met expectations, I
+              understand their needs, which I documented within user stories and
+              a requirements document. To ensure the design met expectations, I
               created several mockups, presenting and refining them based on
               feedback from stakeholders. After nine iterations, the design was
               finalized.

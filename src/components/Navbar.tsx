@@ -41,9 +41,6 @@ const Navbar: React.FC = () => {
       </ScrollLink>
       <ul className="nav-links">
         <li>
-          <a onClick={() => handleNavigation("/", "about")}>About</a>
-        </li>
-        <li>
           <a onClick={() => handleNavigation("/", "projects")}>Projects</a>
         </li>
         <li>
