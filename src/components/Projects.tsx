@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
           <Project
             title={"Email to Calendar REST API"}
             image={emailCalCover}
-            date={"Dec 2024"}
+            date={"Oct 2024"}
             tags={["REST API", "Node.js", "Express", "JavaScript"]}
             caption={
               "A script, served through a REST API, that parses your emails for possible events through an LLM and adds them to your calendar."
@@ -37,18 +37,18 @@ const Projects: React.FC = () => {
           <Project
             title={"Carpool Organizer"}
             image={carpoolCover}
-            date={"Dec 2024"}
+            date={"Jun-Aug 2024"}
             tags={["React", "TypeScript", "Bootstrap", "Git"]}
             caption={
               "An application to organize carpools for my local robotics team of over 100 members."
             }
-            githubLink={"Link"}
+            githubLink={"https://github.com/juliewang617/carpool-organizer"}
             viewMoreLink={"#/projects/carpool"}
           />
           <Project
             title={"Machine Learning Eczema Tool"}
             image={ezedCover}
-            date={"Dec 2024"}
+            date={"Jul 2024"}
             tags={["TensorFlow", "React", "JavaScript"]}
             caption={
               "A web application to combat inequities in eczema treatment, featuring an ML identifier model. Selected as a finalist for Deloitte's Health Equity Challenge."
@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
           <Project
             title={"Connect4 AI"}
             image={null}
-            date={"Dec 2024"}
+            date={"May 2024"}
             tags={["Python", "Flask"]}
             caption={
               "A Connect4 web game, with an AI player that uses the minimax algorithm with alpha-beta pruning to calculate moves."
@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
           <Project
             image={null}
             title={"Social Platform for Cat Owners"}
-            date={"Dec 2024"}
+            date={"May 2024"}
             tags={["React Native", "JavaScript", "Firebase"]}
             caption={"A mobile forum for cat owners to post about their cats."}
             githubLink={"Link"}

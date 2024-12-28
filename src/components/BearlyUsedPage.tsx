@@ -186,7 +186,7 @@ const BearlyUsedPage: React.FC = () => {
           caption={
             "An application to organize carpools for my local robotics team of over 100 members."
           }
-          githubLink={"Link"}
+          githubLink={"https://github.com/juliewang617/carpool-organizer"}
           viewMoreLink={"#/projects/carpool"}
         />
         <Project
