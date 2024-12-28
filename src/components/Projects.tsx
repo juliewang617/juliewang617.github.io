@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
             caption={
               "A full-stack platform for students to exchange used goods, reducing waste across campus."
             }
-            githubLink={"Link"}
+            githubLink={"https://github.com/juliewang617/Bearly-Used"}
             viewMoreLink={"#/projects/bearly-used"}
           />
           <Project
@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
             caption={
               "A script, served through a REST API, that parses your emails for possible events through an LLM and adds them to your calendar."
             }
-            githubLink={"Link"}
+            githubLink={"https://github.com/juliewang617/gmail-to-calendar"}
             viewMoreLink={"#/projects/email-to-cal"}
           />
           <Project
