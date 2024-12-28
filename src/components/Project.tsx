@@ -17,7 +17,6 @@ const Project: React.FC<ProjectProps> = ({
   date,
   tags,
   caption,
-  githubLink,
   viewMoreLink,
 }) => {
   return (
@@ -27,9 +26,7 @@ const Project: React.FC<ProjectProps> = ({
     >
       {image ? <img className="project-image" src={image} /> : null}
       <h4>{title}</h4>
-      <p>
-        {date} | <a href={githubLink}>Github link</a>
-      </p>
+      <p>{date}</p>
       <div className="tags-container">
         {tags.map((tag) => (
           <div className="tag" key={tag}>
