@@ -1,15 +1,31 @@
 import "../App.css";
 import Footer from "./Footer.tsx";
 import Navbar from "./Navbar.tsx";
-import cover from "../assets/ecommerce-proj/cover.png";
 import githubIcon from "../assets/github.svg";
 import Carousel from "react-bootstrap/Carousel";
 import Project from "./Project.tsx";
 import ezedCover from "../assets/ezed-proj/cover.png";
 import carpoolCover from "../assets/carpool-proj/cover.png";
 import emailCalCover from "../assets/email-cal-proj/cover.png";
+import img1 from "../assets/ecommerce-proj/1.png";
+import img2 from "../assets/ecommerce-proj/2.png";
+import img3 from "../assets/ecommerce-proj/3.png";
+import img4 from "../assets/ecommerce-proj/4.png";
+import img5 from "../assets/ecommerce-proj/5.png";
+import { useState } from "react";
+import ImageModal from "./ImageModal.tsx";
 
 const BearlyUsedPage: React.FC = () => {
+  const [selectedImage, setSelectedImage] = useState<string>("");
+
+  const handleImageClick = (image: string) => {
+    setSelectedImage(image);
+  };
+
+  const handleClose = () => {
+    setSelectedImage("");
+  };
+
   return (
     <div className="container-fluid p-0">
       <Navbar />
@@ -23,15 +39,53 @@ const BearlyUsedPage: React.FC = () => {
         </div>
         <Carousel className="project-main-image">
           <Carousel.Item interval={3000}>
-            <img className="carousel-img" src={cover} alt="Image One" />
+            <img
+              className="carousel-img"
+              src={img1}
+              onClick={() => handleImageClick(img1)}
+              style={{ cursor: "ponter" }}
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <img
+              className="carousel-img"
+              src={img2}
+              onClick={() => handleImageClick(img2)}
+              style={{ cursor: "ponter" }}
+            />
             <Carousel.Caption>
-              <p>Watercolor painting of oranges</p>
+              <p>Homepage</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={3000}>
-            <img className="carousel-img" src={cover} alt="Image One" />
+            <img
+              className="carousel-img"
+              src={img3}
+              onClick={() => handleImageClick(img3)}
+              style={{ cursor: "ponter" }}
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <img
+              className="carousel-img"
+              src={img4}
+              onClick={() => handleImageClick(img4)}
+              style={{ cursor: "ponter" }}
+            />
             <Carousel.Caption>
-              <p>Watercolor painting of oranges</p>
+              <p>Individual listing information</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <img
+              className="carousel-img"
+              src={img5}
+              alt="Image One"
+              onClick={() => handleImageClick(img5)}
+              style={{ cursor: "ponter" }}
+            />
+            <Carousel.Caption>
+              <p>View your profile and your previous listings</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -71,16 +125,15 @@ const BearlyUsedPage: React.FC = () => {
             <h5>Overview</h5>
             <p>
               Bearly Used is a platform designed to facilitate sustainable
-              buying, selling, and trading within the Brown University and RISD
-              communities. The application spawned from the observation that
+              buying, selling, and trading within the Brown and RISD
+              communities. The application was ideated from an observation that
               many usable items on campus are wasted due to a lack of places for
-              students to exchange or give away unwanted items throughout the
-              school year, leading to overflowing trash rooms and abundant
-              waste. To mitigate this issue, my team created Bearly Used, which
-              includes features for users to list items, search through
-              available listings, and communicate with other users.
-              Authentication is managed such that only authorized users from
-              Brown and RISD can access the platform.
+              students to exchange or give away unwanted items, leading to
+              overflowing trash rooms and abundant waste. To mitigate this
+              issue, my team created Bearly Used, which includes features for
+              users to list items, search through available listings, and
+              communicate with other users. Authentication is managed such that
+              only authorized users from Brown and RISD can access the platform.
             </p>
           </div>
           <div className="project-paragraph">
@@ -91,18 +144,18 @@ const BearlyUsedPage: React.FC = () => {
               PostgreSQL database. I was in charge of backend development and
               integration. After writing the project proposal and finalizing the
               project structure, I set up the Postgres database and developed
-              Java handlers to manage user and listing information, and search
-              filtering, which I handled through parameterized SQL queries.
-              Afterward, I collaborated with my teammates to integrate the
-              frontend and backend by utilizing TypeScript to call the REST API
-              rather than hard-coded mock data.
+              Java handlers and REST API endpoints to manage user information,
+              listing data, and search filtering, which was done through
+              parameterized SQL queries. Afterward, I collaborated with my
+              teammates to integrate the frontend and backend by utilizing
+              TypeScript to call the REST API rather than hard-coded mock data.
             </p>
           </div>
           <div className="project-paragraph">
             <h5>Takeaways</h5>
             <p>
-              Through this project, I was able to identify a major problem -
-              on-campus waste - and work with a team to create a solution from
+              Through this project, I was able to identify a major problem —
+              on-campus waste — and work with a team to create a solution from
               scratch. I was able to work on both the frontend and backend of
               the site, and learned a great deal about database management and
               REST APIs.
@@ -146,6 +199,7 @@ const BearlyUsedPage: React.FC = () => {
           viewMoreLink={"#/projects/ez-ed"}
         />
       </div>
+      <ImageModal image={selectedImage} handleClose={handleClose} />
       <Footer />
     </div>
   );

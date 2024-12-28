@@ -140,6 +140,10 @@
     object-fit: cover; 
 }
 
+.carousel-img:hover {
+cursor: pointer;
+}
+
 .carousel-caption {
     position: absolute;
     bottom: 20px;
@@ -270,6 +274,7 @@ h4 {
     transform: translateY(-2px);
 }
 
+
 /* Divider */
 
 .divider { 
@@ -319,7 +324,6 @@ h5 {
     margin-bottom: 1em;
     float: left;
 }
-
 
 .project-info { 
     padding: 1em;
@@ -459,12 +463,18 @@ h5 {
         border: none;
     }
 
+    .project-page{
+        width: 100%;
+    }
+
     .other-projects-container {
         flex-direction: column;
+        width: 90%;
+        align-items: center;
     }
     
     .other-projects-container .project-container {
-        max-width: 100%;
+        width: 100%;
     }
 
 

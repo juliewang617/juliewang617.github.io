@@ -22,7 +22,7 @@ const About: React.FC = () => {
             Diversity Committee. Off campus, I've spent several years at Kode
             with Klossy teaching CS to gender minorities. In my free time, I
             love to draw, crochet, and go on walks. Feel free to reach out on
-            any of my socials - I'm always up to connect!
+            any of my socials — I'm always up to connect!
           </p>
           <div className="skills-section">
             <h4>Skills</h4>
