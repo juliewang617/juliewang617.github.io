@@ -3,7 +3,7 @@ import Footer from "./Footer.tsx";
 import Navbar from "./Navbar.tsx";
 import githubIcon from "../assets/github.svg";
 import Project from "./Project.tsx";
-import ezedCover from "../assets/ezed-proj/cover.png";
+import carpoolCover from "../assets/carpool-proj/cover.png";
 import emailCalCover from "../assets/email-cal-proj/cover.png";
 import bearlyUsedCover from "../assets/ecommerce-proj/cover.png";
 import img1 from "../assets/ezed-proj/1.png";
@@ -203,15 +203,15 @@ const EzEdPage: React.FC = () => {
           viewMoreLink={"#/projects/email-to-cal"}
         />
         <Project
-          title={"Machine Learning Eczema Tool"}
-          image={ezedCover}
+          title={"Carpool Organizer"}
+          image={carpoolCover}
           date={"Dec 2024"}
-          tags={["TensorFlow", "React", "JavaScript"]}
+          tags={["React", "TypeScript", "Bootstrap", "Git"]}
           caption={
-            "A web application to combat inequities in eczema treatment, featuring an ML identifier model. Selected as a finalist for Deloitte's Health Equity Challenge."
+            "An application to organize carpools for my local robotics team of over 100 members."
           }
-          githubLink={"Link"}
-          viewMoreLink={"#/projects/ez-ed"}
+          githubLink={"https://github.com/juliewang617/carpool-organizer"}
+          viewMoreLink={"#/projects/carpool"}
         />
       </div>
       <ImageModal image={selectedImage} handleClose={handleClose} />
