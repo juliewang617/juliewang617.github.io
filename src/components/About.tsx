@@ -17,7 +17,7 @@ const About: React.FC = () => {
           <p>
             I'm currently studying computer science at Brown University with
             broad interests in software engineering, systems, and improving
-            gender diversity in tech. On campus, I'm a TA for intro CS and DS&A,
+            gender diversity in tech. On campus, I'm a TA for intro CS and DSA,
             a PM for Full Stack @ Brown, and a former member of the Brown CS
             Diversity Committee. Off campus, I've spent several years at Kode
             with Klossy teaching CS to gender minorities. In my free time, I
