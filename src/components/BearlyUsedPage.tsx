@@ -132,26 +132,23 @@ const BearlyUsedPage: React.FC = () => {
               many usable items on campus are wasted due to a lack of places for
               students to exchange or give away unwanted items, leading to
               overflowing trash rooms and abundant waste. To mitigate this
-              issue, my team created Bearly Used, which includes features for
-              users to list items, search through available listings, and
-              communicate with other users. Authentication is managed such that
-              only authorized users from Brown and RISD can access the platform.
+              issue, my team created Bearly Used, which features item listings,
+              advanced search capabilities, and user communication, with access
+              restricted to verified students.
             </p>
           </div>
           <div className="project-paragraph">
             <h5>Development Process</h5>
             <p>
-              The application consists of a TypeScript and React frontend and a
-              Java backend, served through a REST API, that communicates with a
-              PostgreSQL database. I was in charge of backend development and
-              integration. After writing the project proposal and finalizing the
-              project structure, I set up the Postgres database and developed
-              Java handlers and REST API endpoints to manage user information,
-              listing data, and search filtering, which was done through
-              parameterized SQL queries. Afterward, I worked on integrating the
-              frontend and backend by utilizing TypeScript to call the REST API
-              rather than hard-coded mock data. Then, I worked on JUnit tests
-              for the backend and end-to-end testing using Playwright.
+              The frontend is built with React and TypeScript, while the backend
+              uses Java and a REST API to communicate with a PostgreSQL
+              database. I led backend development by designing and implementing
+              the database to manage user authentication, listings, and search
+              filtering through parameterized SQL queries. I developed REST API
+              endpoints and Java handlers, then integrated the frontend with the
+              backend by replacing mock data with real API calls. Testing
+              included JUnit for backend functionality and Playwright for
+              end-to-end workflows.
             </p>
           </div>
           <div className="project-paragraph">

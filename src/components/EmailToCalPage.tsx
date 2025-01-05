@@ -79,10 +79,11 @@ const EmailToCalPage: React.FC = () => {
           <div className="project-paragraph">
             <h5>Takeaways</h5>
             <p>
-              Through this project, I was able to identify a real-life nuisance
-              and build a solution for it. I gained experience in crafting a
-              RESTful API with Node and Express. I also learned how to integrate
-              Google’s Developer APIs—OAuth 2.0, Gmail, Calendar, and Gemini.
+              This project addressed a common time-management challenge,
+              providing hands-on experience with RESTful API development,
+              Google’s Developer APIs (OAuth 2.0, Gmail, Calendar, and Gemini),
+              and integrating AI-powered parsing tools into practical
+              applications.
             </p>
           </div>
         </div>

@@ -111,35 +111,30 @@ const CarpoolPage: React.FC = () => {
           <div className="project-paragraph">
             <h5>Overview</h5>
             <p>
-              Over the summer, I worked with my local robotics team, the
-              LigerBots, to create a carpool organizer. With over 100 students,
-              organizing carpools to meets and competitions was an arduous
-              process, especially since they were too large to use free
-              organization options. This meant carpools were organized by hand
-              by student leaders and coaches, which took precious time away
-              during build season.
+              Over the summer, I collaborated with the LigerBots, a robotics
+              team of over 100 students, to develop a carpool organizer that
+              automated the process of managing carpools for meets and
+              competitions. Due to their large size, they could not use free
+              existing software, and had to manually coordinate transport.
             </p>
           </div>
           <div className="project-paragraph">
             <h5>Development Process</h5>
             <p>
-              I started by holding meetings with coaches and students to
-              understand their needs, which I documented within user stories and
-              a requirements document. To ensure the design met expectations, I
-              created several mockups, presenting and refining them based on
-              feedback from stakeholders. After nine iterations, the design was
-              finalized.
+              I began by holding stakeholder meetings with coaches and students
+              to document user needs in the form of user stories and a
+              requirements document. Using feedback from stakeholders, I
+              iteratively designed and refined mockups, completing nine versions
+              before finalizing the design.
             </p>
             <p>
               I also collaborated with a coach to determine the application’s
               data structure and technology stack. We decided on a React
               JavaScript frontend, a Node.js and Express backend, and a SQLite
-              database, with additional discussions about implementing user
-              authentication. In August, I developed the frontend, carefully
-              designing the UI with React and JavaScript. I focused on writing
-              clear, modular code, using reusable React components to ensure the
-              project could be easily maintained and expanded by future
-              developers.
+              database. In August, I developed the frontend with React and
+              JavaScript, focusing on modular and maintainable code with
+              reusable React components to ensure the project could be easily
+              expanded by future developers.
             </p>
           </div>
           <div className="project-paragraph">

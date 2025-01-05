@@ -130,24 +130,20 @@ const EzEdPage: React.FC = () => {
               challenge regarding health equity, I was inspired by my experience
               with eczema (atopic dermatitis, or A.D.) to create Eczema-Educate
               (Ez-Ed), a website dedicated to raising awareness about A.D. and
-              addressing disparities in access to care. Ez-Ed aims to inform
-              users about eczema’s impacts, guide them in identifying and
-              managing symptoms, and provide resources to improve their quality
-              of life.
+              addressing disparities in access to care. The site educates users
+              about eczema, helps identify and manage symptoms, and connects
+              them with resources to improve their quality of life.
             </p>
           </div>
           <div className="project-paragraph">
             <h5>Development Process</h5>
             <p>
-              I first began by researching A.D. to learn more about inequities
-              in treatment. Through research, I learned about the widespread
-              prevalence of A.D. and the significant number of individuals
-              worldwide who struggle to access proper treatment. Once I gathered
-              enough information, I began working on Figma mockups of the site.
-              I then developed the web app with React and JavaScript, building
-              pages to educate users on A.D., provide symptom management support
-              through a questionnaire, and encourage participation in
-              eczema-related research initiatives.
+              I first began by researching A.D. to learn more about the
+              widespread inequities in eczema treatment. Afterward, I designed
+              Figma mockups of the site. I then developed the web app with React
+              and JavaScript, building pages to educate users on A.D., provide
+              symptom management support through a questionnaire, and encourage
+              participation in eczema-related research initiatives.
             </p>
             <p>
               The highlight of the project is the ML model, created with
