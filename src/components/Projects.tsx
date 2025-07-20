@@ -4,7 +4,7 @@ import Project from "./Project";
 import ezedCover from "../assets/ezed-proj/cover.png";
 import carpoolCover from "../assets/carpool-proj/cover.png";
 import bearlyUsedCover from "../assets/ecommerce-proj/cover.png";
-import emailCalCover from "../assets/email-cal-proj/cover.png";
+import connect4Cover from "../assets/connect4/1.png";
 
 const Projects: React.FC = () => {
   return (
@@ -23,7 +23,7 @@ const Projects: React.FC = () => {
             githubLink={"https://github.com/juliewang617/Bearly-Used"}
             viewMoreLink={"#/projects/bearly-used"}
           />
-          <Project
+          {/* <Project
             title={"Email to Calendar REST API"}
             image={emailCalCover}
             date={"Oct 2024"}
@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
             }
             githubLink={"https://github.com/juliewang617/gmail-to-calendar"}
             viewMoreLink={"#/projects/email-to-cal"}
-          />
+          /> */}
           <Project
             title={"Carpool Organizer"}
             image={carpoolCover}
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
           />
           <Project
             title={"Connect4 AI"}
-            image={null}
+            image={connect4Cover}
             date={"May 2024"}
             tags={["Python", "Flask"]}
             caption={
@@ -68,15 +68,6 @@ const Projects: React.FC = () => {
             viewMoreLink={
               "https://github.com/juliewang617/Connect4-with-AI-Player"
             }
-          />
-          <Project
-            image={null}
-            title={"Social Platform for Cat Owners"}
-            date={"May 2024"}
-            tags={["React Native", "JavaScript", "Firebase"]}
-            caption={"A mobile forum for cat owners to post about their cats."}
-            githubLink={"Link"}
-            viewMoreLink={"https://github.com/juliewang617/Cattit"}
           />
         </div>
       </div>

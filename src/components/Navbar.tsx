@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
         <li>
           <a onClick={() => handleNavigation("/", "hobbies")}>Hobbies</a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="https://drive.google.com/file/d/1MN14Zd6YfQrrObuCb35UDeV41uScSnEA/view?usp=sharing"
             target="_blank"
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
           >
             Resume
           </a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

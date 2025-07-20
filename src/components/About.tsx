@@ -16,13 +16,13 @@ const About: React.FC = () => {
           <h1>Hi, I'm Julie!</h1>
           <p>
             I'm currently studying computer science at Brown University with
-            broad interests in software engineering, systems, and improving
-            gender diversity in tech. On campus, I'm a TA for intro CS and DSA,
-            a PM for Full Stack @ Brown, and a former member of the Brown CS
-            Diversity Committee. Off campus, I've spent several years at Kode
-            with Klossy teaching CS to gender minorities. In my free time, I
-            love to draw, crochet, and go on walks. Feel free to reach out on
-            any of my socials — I'm always up to connect!
+            broad interests in software engineering and systems. I'm currently a
+            SWE Intern at HubSpot in Cambridge, MA. On campus, I'm a teaching
+            assistant for several CS courses and help run Product Management @
+            Brown. Off campus, I've spent several years at Kode with Klossy as
+            an instructional assistant. In my free time, I love to draw,
+            crochet, and go on walks. Feel free to reach out on any of my
+            socials — I'm always up to connect!
           </p>
           <div className="skills-section">
             <h4>Skills</h4>
