@@ -2,43 +2,38 @@ import React from "react";
 import "../styles/Styles.css";
 import me from "../assets/me.png";
 import emailIcon from "../assets/email.svg";
-import githubIcon from "../assets/github.svg";
+// import githubIcon from "../assets/github.svg";
 import linkedInIcon from "../assets/linkedin.svg";
 
 const About: React.FC = () => {
   return (
-    <div className="section" id="about">
+    <div className="section-container" id="about">
       <div className="column-section">
         <div className="column">
           <img src={me} className="intro-picture" />
         </div>
         <div className="column">
-          <h1>Hi, I'm Julie!</h1>
+          <h1>Julie Wang</h1>
           <p>
             I'm currently studying computer science at Brown University with
-            broad interests in software engineering and systems. This past
-            summer, I was a backend SWE intern at HubSpot where I worked on
-            access management systems on the HubSpot platform.
+            interests in backend software engineering and systems. This past
+            summer, I worked on HubSpot's access management infrastructure as a
+            SWE intern.
           </p>
           <p>
-            On campus, I'm a head teaching assistant for several CS courses and
-            a dancer for Brown's Asian Dance troupe. In my free time, I love to
-            draw, crochet, and go on walks. Feel free to reach out on any of my
-            socials — I'm always up to connect!
+            On campus, I'm a TA for intro CS and DSA and an undergraduate
+            researcher in the{" "}
+            <a href="https://etos.cs.brown.edu/">ETOS Group</a>. In my free
+            time, I like to go on long walks.
           </p>
-          <div className="skills-section">
-            <h4>Skills</h4>
+          {/* <div className="skills-section">
+            <h4>Interests</h4>
             <div className="tags-container">
-              <div className="tag">Java</div>
-              <div className="tag">TypeScript</div>
-              <div className="tag">JavaScript</div>
-              <div className="tag">Python</div>
-              <div className="tag">SQL</div>
-              <div className="tag">React</div>
-              <div className="tag">Node</div>
-              <div className="tag">Git</div>
+              <div className="tag">Operating Systems</div>
+              <div className="tag">Networks</div>
+              <div className="tag">Software Engineering</div>
             </div>
-          </div>
+          </div> */}
           <div>
             <h4 className="pt-1">Links</h4>
             <div className="icon-section">
@@ -47,11 +42,11 @@ const About: React.FC = () => {
                 src={emailIcon}
                 onClick={() => (location.href = "mailto:julie_wang2@brown.edu")}
               ></img>
-              <img
+              {/* <img
                 className="icon"
                 src={githubIcon}
                 onClick={() => window.open("https://github.com/juliewang617")}
-              ></img>
+              ></img> */}
               <img
                 className="icon"
                 src={linkedInIcon}

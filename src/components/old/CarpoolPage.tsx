@@ -1,8 +1,8 @@
 import "../App.css";
-import Footer from "./Footer.tsx";
-import Navbar from "./Navbar.tsx";
+import Footer from "../Footer.tsx";
+import Navbar from "../Navbar.tsx";
 import githubIcon from "../assets/github.svg";
-import Project from "./Project.tsx";
+import Project from "../Project.tsx";
 import ezedCover from "../assets/ezed-proj/cover.png";
 import emailCalCover from "../assets/email-cal-proj/cover.png";
 import bearlyUsedCover from "../assets/ecommerce-proj/cover.png";
@@ -12,7 +12,7 @@ import img3 from "../assets/carpool-proj/3.png";
 import img4 from "../assets/carpool-proj/4.png";
 import { Carousel } from "react-bootstrap";
 import { useState } from "react";
-import ImageModal from "./ImageModal.tsx";
+import ImageModal from "../ImageModal.tsx";
 
 const CarpoolPage: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string>("");

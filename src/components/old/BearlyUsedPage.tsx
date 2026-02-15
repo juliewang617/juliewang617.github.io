@@ -2,20 +2,16 @@ import "../App.css";
 import Footer from "./Footer.tsx";
 import Navbar from "./Navbar.tsx";
 import githubIcon from "../assets/github.svg";
-import Project from "./Project.tsx";
-import carpoolCover from "../assets/carpool-proj/cover.png";
-import emailCalCover from "../assets/email-cal-proj/cover.png";
-import bearlyUsedCover from "../assets/ecommerce-proj/cover.png";
-import img1 from "../assets/ezed-proj/1.png";
-import img2 from "../assets/ezed-proj/2.png";
-import img3 from "../assets/ezed-proj/3.png";
-import img4 from "../assets/ezed-proj/4.png";
-import img5 from "../assets/ezed-proj/5.png";
-import { Carousel } from "react-bootstrap";
+import Carousel from "react-bootstrap/Carousel";
+import img1 from "../assets/ecommerce-proj/1.png";
+import img2 from "../assets/ecommerce-proj/2.png";
+import img3 from "../assets/ecommerce-proj/3.png";
+import img4 from "../assets/ecommerce-proj/4.png";
+import img5 from "../assets/ecommerce-proj/5.png";
 import { useState } from "react";
 import ImageModal from "./ImageModal.tsx";
 
-const EzEdPage: React.FC = () => {
+const BearlyUsedPage: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string>("");
 
   const handleImageClick = (image: string) => {
@@ -25,15 +21,16 @@ const EzEdPage: React.FC = () => {
   const handleClose = () => {
     setSelectedImage("");
   };
+
   return (
     <div className="container-fluid p-0">
       <Navbar />
       <div className="project-page">
         <div className="project-header">
-          <h1>Eczema-Educate</h1>
+          <h1>Bearly Used</h1>
           <p>
-            A web application to combat inequities in eczema treatment,
-            featuring an ML identifier model.
+            A buy/sell platform for Brown and RISD students to exchange used
+            items.
           </p>
         </div>
         <Carousel className="project-main-image">
@@ -44,9 +41,6 @@ const EzEdPage: React.FC = () => {
               onClick={() => handleImageClick(img1)}
               style={{ cursor: "ponter" }}
             />
-            <Carousel.Caption>
-              <p>Homepage</p>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={3000}>
             <img
@@ -56,7 +50,7 @@ const EzEdPage: React.FC = () => {
               style={{ cursor: "ponter" }}
             />
             <Carousel.Caption>
-              <p>Background on atopic dermatits</p>
+              <p>Homepage</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={3000}>
@@ -66,20 +60,6 @@ const EzEdPage: React.FC = () => {
               onClick={() => handleImageClick(img3)}
               style={{ cursor: "ponter" }}
             />
-            <Carousel.Caption>
-              <p>ML Model to identify images of eczema</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item interval={3000}>
-            <img
-              className="carousel-img"
-              src={img4}
-              onClick={() => handleImageClick(img5)}
-              style={{ cursor: "ponter" }}
-            />
-            <Carousel.Caption>
-              <p>Questionaire to help understand atopic dermatitis symptoms</p>
-            </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={3000}>
             <img
@@ -89,7 +69,19 @@ const EzEdPage: React.FC = () => {
               style={{ cursor: "ponter" }}
             />
             <Carousel.Caption>
-              <p>Action items for users to help atopic dermatits research</p>
+              <p>Individual listing information</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item interval={3000}>
+            <img
+              className="carousel-img"
+              src={img5}
+              alt="Image One"
+              onClick={() => handleImageClick(img5)}
+              style={{ cursor: "ponter" }}
+            />
+            <Carousel.Caption>
+              <p>View your profile and your previous listings</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -97,24 +89,28 @@ const EzEdPage: React.FC = () => {
           <div className="project-info-row">
             <div className="project-info-div">
               <h5>Role</h5>
-              <p>Sole Developer</p>
+              <p>Developer (backend and integration)</p>
             </div>
             <div className="project-info-div">
               <h5>Timeline</h5>
-              <p>June-August 2024</p>
+              <p>November-December 2024</p>
             </div>
           </div>
           <div className="project-info-row">
             <div className="project-info-div">
               <h5>Skills</h5>
-              <p>React, JavaScript, TensorFlow, Teachable Machine</p>
+              <p>Java, TypeScript, React, PostgreSQL, E2E Testing</p>
+            </div>
+            <div className="project-info-div">
+              <h5>Team</h5>
+              <p>4 Developers</p>
             </div>
           </div>
           <div className="project-info-row">
             <div
               className="project-github-link"
               onClick={() =>
-                window.open("https://github.com/juliewang617/ez-ed")
+                window.open("https://github.com/juliewang617/Bearly-Used")
               }
             >
               <img className="icon" src={githubIcon}></img>
@@ -126,65 +122,45 @@ const EzEdPage: React.FC = () => {
           <div className="project-paragraph">
             <h5>Overview</h5>
             <p>
-              When Kode with Klossy and Deloitte announced its latest tech
-              challenge regarding health equity, I was inspired by my experience
-              with eczema (atopic dermatitis, or A.D.) to create Eczema-Educate
-              (Ez-Ed), a website dedicated to raising awareness about A.D. and
-              addressing disparities in access to care. The site educates users
-              about eczema, helps identify and manage symptoms, and connects
-              them with resources to improve their quality of life.
+              Bearly Used is a platform designed to facilitate sustainable
+              buying, selling, and trading within the Brown and RISD
+              communities. The application was ideated from an observation that
+              many usable items on campus are wasted due to a lack of places for
+              students to exchange or give away unwanted items, leading to
+              overflowing trash rooms and abundant waste. To mitigate this
+              issue, my team created Bearly Used, which features item listings,
+              advanced search capabilities, and user communication, with access
+              restricted to verified students.
             </p>
           </div>
           <div className="project-paragraph">
             <h5>Development Process</h5>
             <p>
-              I first began by researching A.D. to learn more about the
-              widespread inequities in eczema treatment. Afterward, I designed
-              Figma mockups of the site. I then developed the web app with React
-              and JavaScript, building pages to educate users on A.D., provide
-              symptom management support through a questionnaire, and encourage
-              participation in eczema-related research initiatives.
-            </p>
-            <p>
-              The highlight of the project is the ML model, created with
-              Google's Teachable Machine and the Tensorflow library, that
-              identifies images of various skin conditions. I trained the model
-              on over 10,000 images of skin conditions, including eczema,
-              melanoma, and basal cell carcinoma. This tool, integrated into the
-              website, allows users with limited access to healthcare to
-              identify potential skin conditions and seek appropriate guidance.
-            </p>
-            <p>
-              After completing the project, I was thrilled to be selected as a
-              finalist in the challenge, where I presented my work to Deloitte
-              employees.
+              The frontend is built with React and TypeScript, while the backend
+              uses Java and a REST API to communicate with a PostgreSQL
+              database. I led backend development by designing and implementing
+              the database to manage user authentication, listings, and search
+              filtering through parameterized SQL queries. I developed REST API
+              endpoints and Java handlers, then integrated the frontend with the
+              backend by replacing mock data with real API calls. Testing
+              included JUnit for backend functionality and Playwright for
+              end-to-end workflows.
             </p>
           </div>
           <div className="project-paragraph">
             <h5>Takeaways</h5>
             <p>
-              This project deepened my understanding of using technology for
-              social impact. It strengthened my skills in user-centered design,
-              web development, and machine learning integration, while also
-              giving me the opportunity to address a real-world issue close to
-              my heart.
+              Through this project, I was able to identify a major problem —
+              on-campus waste — and work with a team to create a solution from
+              scratch. I was able to work on both the frontend and backend of
+              the site, and learned a great deal about database management and
+              REST APIs.
             </p>
           </div>
         </div>
       </div>
-      <h4 className="text-center pt-3">Check out my other projects!</h4>
+      {/* <h4 className="text-center pt-3">Check out my other projects!</h4>
       <div className="other-projects-container">
-        <Project
-          title={"College Commerce Platform"}
-          image={bearlyUsedCover}
-          date={"Dec 2024"}
-          tags={["Java", "React", "REST API", "PostgreSQL", "E2E Testing"]}
-          caption={
-            "A full-stack platform for students to exchange used goods, reducing waste across campus."
-          }
-          githubLink={"https://github.com/juliewang617/Bearly-Used"}
-          viewMoreLink={"#/projects/bearly-used"}
-        />
         <Project
           title={"Email to Calendar REST API"}
           image={emailCalCover}
@@ -207,11 +183,22 @@ const EzEdPage: React.FC = () => {
           githubLink={"https://github.com/juliewang617/carpool-organizer"}
           viewMoreLink={"#/projects/carpool"}
         />
-      </div>
+        <Project
+          title={"Machine Learning Eczema Tool"}
+          image={ezedCover}
+          date={"Dec 2024"}
+          tags={["TensorFlow", "React", "JavaScript"]}
+          caption={
+            "A web application to combat inequities in eczema treatment, featuring an ML identifier model. Selected as a finalist for Deloitte's Health Equity Challenge."
+          }
+          githubLink={"Link"}
+          viewMoreLink={"#/projects/ez-ed"}
+        />
+      </div> */}
       <ImageModal image={selectedImage} handleClose={handleClose} />
       <Footer />
     </div>
   );
 };
 
-export default EzEdPage;
+export default BearlyUsedPage;

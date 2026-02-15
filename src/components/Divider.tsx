@@ -1,13 +1,14 @@
 import React from "react";
 import "../styles/Styles.css";
-import flower from "../assets/flower.svg";
+//import flower from "../assets/flower.svg";
 
+// uncomment for divider
 const Divider: React.FC = () => {
   return (
     <div className="divider">
-      <hr />
+      {/* <hr />
       <img src={flower}></img>
-      <hr />
+      <hr /> */}
     </div>
   );
 };

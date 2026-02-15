@@ -13,7 +13,7 @@ interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = ({
   title,
-  image,
+  // image,
   date,
   tags,
   caption,
@@ -24,7 +24,7 @@ const Project: React.FC<ProjectProps> = ({
       className="project-container"
       onClick={() => (window.location.href = viewMoreLink)}
     >
-      {image ? <img className="project-image" src={image} /> : null}
+      {/* {image ? <img className="project-image" src={image} /> : null} */}
       <h4>{title}</h4>
       <p>{date}</p>
       <div className="tags-container">

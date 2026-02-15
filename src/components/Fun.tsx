@@ -20,7 +20,7 @@ const Fun: React.FC = () => {
     setSelectedImage("");
   };
   return (
-    <div className="section" id="hobbies">
+    <div className="section-container" id="hobbies">
       <div className="column-section">
         <div className="column">
           <h1>Hobbies</h1>

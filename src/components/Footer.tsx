@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <nav className="footer">
       <ul className="footer-items">
-        <li>@2024 Julie Wang. Developed with React and Bootstrap</li>
+        <li>@2026 Julie Wang</li>
         <div className="footer-links">
           <li>
             <a target="_blank" href="https://github.com/juliewang617">

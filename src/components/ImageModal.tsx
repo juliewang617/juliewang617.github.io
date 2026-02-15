@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Styles.css";
+import "../App.css";
 import Modal from "react-bootstrap/Modal";
 
 interface ImageModalProps {

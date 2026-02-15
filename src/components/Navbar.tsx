@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
           <a onClick={() => handleNavigation("/", "projects")}>Projects</a>
         </li>
         <li>
-          <a onClick={() => handleNavigation("/", "hobbies")}>Hobbies</a>
+          <a onClick={() => handleNavigation("/hobbies", "")}>Hobbies</a>
         </li>
         {/* <li>
           <a

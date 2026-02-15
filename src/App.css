@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-  --offwhite: #fdfaf5;
+  --offwhite: #faf9f6;
   --blue1: #D4E5E9;
   --blue2: #A9CED7;
   --blue3: #567dc5;
@@ -18,11 +18,11 @@
 
 p { 
   text-align: left; 
-  color: var(--blue3);
+  color: var(--purple);
 }
 
 h1 { 
-  font-family: 'Merriweather', serif;
+  /* font-family: "Google Sans", sans-serif; */
   font-size: 2em;
   font-weight: bold; 
   color: var(--purple);
