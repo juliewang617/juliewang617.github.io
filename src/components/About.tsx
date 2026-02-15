@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Styles.css";
 import me from "../assets/me.png";
 import emailIcon from "../assets/email.svg";
-// import githubIcon from "../assets/github.svg";
+import githubIcon from "../assets/github.svg";
 import linkedInIcon from "../assets/linkedin.svg";
 
 const About: React.FC = () => {
@@ -42,11 +42,11 @@ const About: React.FC = () => {
                 src={emailIcon}
                 onClick={() => (location.href = "mailto:julie_wang2@brown.edu")}
               ></img>
-              {/* <img
+              <img
                 className="icon"
                 src={githubIcon}
                 onClick={() => window.open("https://github.com/juliewang617")}
-              ></img> */}
+              ></img>
               <img
                 className="icon"
                 src={linkedInIcon}
